@@ -9,12 +9,12 @@ import javax.validation.Valid;
 @RestController
 public class testConfig {
 
-    @Value("${userName}")
-    private String userName;
+    @Value("${names}")
+    private String names;
 
-    @RequestMapping("/hello")
-    public String sayhello(){
-        return userName;
+    @RequestMapping("/names")
+    public String name(){
+        return names;
     }
 
 
